@@ -8,37 +8,99 @@ body {
     margin-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+a, .traitLabel {
+    cursor: pointer;
+}
+
 .header-image {
     display: block;
     width: 100%;
     text-align: center;
 /*    background: url('http://placehold.it/1900x500') no-repeat center center scroll;*/
-    background-color: aquamarine;
+    background-color: #99ccff;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 
-.dance {
+span.dance {
     background-color: deeppink;
     color: white;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.healthTech {
+span.healthTech {
     background-color: midnightblue;
     color: white;
     padding-left: 5px;
     padding-right: 5px;
 }
 
-.matcha {
+span.matcha {
     background-color: darkgreen;
     color: white;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+.healthTech .funFact {
+    border-left-style: solid;
+    border-color: midnightblue;
+}
+
+.dance .funFact {
+    border-left-style: solid;
+    border-color: red;
+}
+
+.matcha .funFact {
+    border-left-style: solid;
+    border-color: darkgreen;
+}
+
+
+.matcha > div.panel-heading {
+    background-color: darkgreen;
+    color: white;
+}
+
+.dance > div.panel-heading {
+    background-color: deeppink;
+    color: white;
+}
+
+.healthTech > div.panel-heading {
+    background-color: midnightblue;
+    color: white;
+}
+
+.header-panel .panel-heading {
+    padding-left: 10px;
+    text-align: left;
+}
+
+div.panel-body {
+    background-color: #e6f2ff;
+    color: black;
+}
+
+.header-panel .panel-body ul li {
+    text-align: left;
+}
+
+.header-panel .panel-body ol li {
+    text-align: left;
+}
+
+.header-panel .panel-body > p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.panel-default {
+    border-style: none;
 }
 
 .headline {
@@ -69,6 +131,24 @@ body {
     overflow: hidden;
     padding-top: 35px;
     padding-bottom: 35px;
+}
+
+#workexperience ul li {
+    border-left: solid;
+    border-color: orangered;
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5em;
+}
+
+#workexperience ul > ul > li {
+    border-left: solid;
+    border-color: blue;
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.1em;
 }
 
 .featurette-image.pull-left {
